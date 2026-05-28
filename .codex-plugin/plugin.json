@@ -1,7 +1,7 @@
 {
   "name": "ivklgn",
+  "version": "2.0.5",
   "description": "AI coding agents and skills: specialized subagents for React, Go, TypeScript, PostgreSQL, CSS, Playwright, deployment, security, LLM architecture, and more",
-  "version": "2.0.4",
   "author": {
     "name": "ivklgn"
   },
@@ -9,6 +9,8 @@
   "homepage": "https://github.com/ivklgn/ai",
   "license": "MIT",
   "keywords": [
+    "codex",
+    "codex-cli",
     "claude-code",
     "subagents",
     "skills",
@@ -23,5 +25,13 @@
     "llm",
     "mcp",
     "prompt-engineering"
-  ]
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "ivklgn",
+    "shortDescription": "Specialized subagents and skills for React, Go, TypeScript, PostgreSQL, CSS, Playwright, security, LLM architecture, and more",
+    "developerName": "ivklgn",
+    "category": "Productivity"
+  }
 }

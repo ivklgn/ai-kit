@@ -1,0 +1,20 @@
+{
+  "name": "ivklgn-ai",
+  "interface": {
+    "displayName": "ivklgn"
+  },
+  "plugins": [
+    {
+      "name": "ivklgn",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
