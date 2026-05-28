@@ -1,4 +1,4 @@
-# ivklgn
+# uncle-vanya-tools
 
 22 specialized subagents and 5 skills, packaged for **Claude Code** and the **OpenAI Codex CLI** from a single shared source tree. Skills work identically on both hosts; subagents are Claude-first today, with Codex compatibility planned.
 
@@ -9,7 +9,7 @@
 /plugin marketplace add ivklgn/ai
 
 # Install the plugin
-/plugin install ivklgn
+/plugin install uncle-vanya-tools
 ```
 
 Or via `settings.json`:
@@ -25,7 +25,7 @@ Or via `settings.json`:
     }
   },
   "enabledPlugins": {
-    "ivklgn@ivklgn-ai": true
+    "uncle-vanya-tools@ivklgn-ai": true
   }
 }
 ```
@@ -52,7 +52,7 @@ codex plugin marketplace add ~/ivklgn-ai
 Then enable the plugin — either through the in-app picker in `codex`, or by adding the following to `~/.codex/config.toml`:
 
 ```toml
-[plugins."ivklgn@ivklgn-ai"]
+[plugins."uncle-vanya-tools@ivklgn-ai"]
 enabled = true
 ```
 
@@ -60,7 +60,7 @@ enabled = true
 
 ```bash
 # Claude Code
-claude plugin uninstall ivklgn --scope user
+claude plugin uninstall uncle-vanya-tools --scope user
 
 # Codex — disable in ~/.codex/config.toml, then drop the marketplace
 codex plugin marketplace remove ivklgn-ai

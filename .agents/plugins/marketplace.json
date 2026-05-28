@@ -5,7 +5,7 @@
   },
   "plugins": [
     {
-      "name": "ivklgn",
+      "name": "uncle-vanya-tools",
       "source": {
         "source": "local",
         "path": "./"
