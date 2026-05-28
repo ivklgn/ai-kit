@@ -17,7 +17,7 @@ Or via `settings.json`:
 ```json
 {
   "extraKnownMarketplaces": {
-    "ivklgn-ai": {
+    "ivklgn": {
       "source": {
         "source": "github",
         "repo": "ivklgn/ai"
@@ -25,7 +25,7 @@ Or via `settings.json`:
     }
   },
   "enabledPlugins": {
-    "uncle-vanya-tools@ivklgn-ai": true
+    "uncle-vanya-tools@ivklgn": true
   }
 }
 ```
@@ -45,14 +45,14 @@ claude --plugin-dir .
 codex plugin marketplace add ivklgn/ai
 
 # Or from a local clone
-git clone https://github.com/ivklgn/ai.git ~/ivklgn-ai
-codex plugin marketplace add ~/ivklgn-ai
+git clone https://github.com/ivklgn/ai.git ~/ivklgn
+codex plugin marketplace add ~/ivklgn
 ```
 
 Then enable the plugin — either through the in-app picker in `codex`, or by adding the following to `~/.codex/config.toml`:
 
 ```toml
-[plugins."uncle-vanya-tools@ivklgn-ai"]
+[plugins."uncle-vanya-tools@ivklgn"]
 enabled = true
 ```
 
@@ -63,7 +63,7 @@ enabled = true
 claude plugin uninstall uncle-vanya-tools --scope user
 
 # Codex — disable in ~/.codex/config.toml, then drop the marketplace
-codex plugin marketplace remove ivklgn-ai
+codex plugin marketplace remove ivklgn
 ```
 
 ## Agents
