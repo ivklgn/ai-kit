@@ -1,5 +1,5 @@
 {
-  "name": "uncle-vanya-tools",
+  "name": "ai-kit",
   "description": "AI coding agents and skills: specialized subagents for React, Go, TypeScript, PostgreSQL, CSS, Playwright, deployment, security, LLM architecture, and more",
   "version": "2.0.5",
   "author": {

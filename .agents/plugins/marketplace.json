@@ -5,7 +5,7 @@
   },
   "plugins": [
     {
-      "name": "uncle-vanya-tools",
+      "name": "ai-kit",
       "source": {
         "source": "local",
         "path": "./"
