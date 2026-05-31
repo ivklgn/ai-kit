@@ -1,6 +1,10 @@
+<p align="center">
+  <img src="logo.png" alt="ai-kit" width="480">
+</p>
+
 # ai-kit
 
-Subagents and skills for **Claude Code** and the **OpenAI Codex CLI**, from one shared source.
+Subagents and skills for **Claude Code** and the **OpenAI Codex CLI**, from one shared source. By Ivan K. (<https://github.com/ivklgn>)
 
 ## Install
 
