@@ -58,6 +58,17 @@ Check all agent and skill files against these rules:
 5. Description is non-empty
 6. Meaningful markdown body after frontmatter
 
+### Codex agent manifests (`agents/*.toml`)
+
+Codex discovers subagents from `.toml` files, so every Claude Code agent must have a matching Codex manifest.
+
+1. Pairing — every `agents/*.md` has a sibling `agents/*.toml` (same basename), and every `agents/*.toml` has a sibling `agents/*.md`. Report any unpaired file.
+2. Valid TOML — parses without error.
+3. Required fields — `name`, `description`, `sandbox_mode`, `developer_instructions` all present and non-empty.
+4. Name matches — `name` equals the filename without `.toml` and equals the `name` in the paired `.md`.
+5. `sandbox_mode` value — one of: `read-only`, `workspace-write`. Use `read-only` when the paired `.md` `tools` contain no `Write`/`Edit`/`Bash`, otherwise `workspace-write`.
+6. `developer_instructions` matches the paired `.md` markdown body (the prompt after frontmatter).
+
 ### Skill files (`skills/*/SKILL.md`)
 
 1. Frontmatter present — starts with `---` and has closing `---`
