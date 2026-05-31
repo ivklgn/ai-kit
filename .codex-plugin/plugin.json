@@ -27,7 +27,7 @@
     "prompt-engineering"
   ],
   "skills": "./skills/",
-  "mcpServers": "./.codex.mcp.json",
+  "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "AI Kit",
     "shortDescription": "Specialized subagents and skills for React, Go, TypeScript, PostgreSQL, CSS, Playwright, security, LLM architecture, and more",
