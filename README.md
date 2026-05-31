@@ -11,14 +11,15 @@ Subagents and skills for **Claude Code** and the **OpenAI Codex CLI**, from one 
 /plugin install ai-kit
 ```
 
-**Codex CLI**
+**Codex CLI** — requires Codex CLI v0.117.0+.
 
 ```bash
 codex plugin marketplace add ivklgn/ai-kit
-codex plugin add ai-kit@ivklgn
+codex
+# then run /plugins, open AI Kit, select Install plugin
 ```
 
-Then start a new Codex thread so the plugin skills and tools are loaded. Local dev: `claude --plugin-dir .`
+Local dev: `claude --plugin-dir .`
 
 ## Agents
 
@@ -27,6 +28,10 @@ Then start a new Codex thread so the plugin skills and tools are loaded. Local d
 ## Skills
 
 `load-branch-changes` · `reset-permissions` · `review-golang` · `update-golang-deps` · `update-node-deps`
+
+## Commands
+
+`/ai-kit:load-branch-changes` · `/ai-kit:reset-permissions` · `/ai-kit:review-golang` · `/ai-kit:update-golang-deps` · `/ai-kit:update-node-deps`
 
 ## License
 

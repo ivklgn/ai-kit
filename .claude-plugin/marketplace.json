@@ -3,6 +3,9 @@
   "owner": {
     "name": "ivklgn"
   },
+  "metadata": {
+    "description": "Specialized subagents, skills, and commands for AI coding agents"
+  },
   "plugins": [
     {
       "name": "ai-kit",
