@@ -7,14 +7,14 @@ Subagents and skills for **Claude Code** and the **OpenAI Codex CLI**, from one 
 **Claude Code**
 
 ```bash
-/plugin marketplace add ivklgn/ai
+/plugin marketplace add ivklgn/ai-kit
 /plugin install ai-kit
 ```
 
 **Codex CLI**
 
 ```bash
-codex plugin marketplace add ivklgn/ai
+codex plugin marketplace add ivklgn/ai-kit
 ```
 
 Then enable `ai-kit` in the picker. Local dev: `claude --plugin-dir .`
