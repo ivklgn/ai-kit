@@ -27,11 +27,15 @@ Local dev: `claude --plugin-dir .`
 
 ## Skills
 
-`load-branch-changes` · `reset-permissions` · `review-golang` · `update-golang-deps` · `update-node-deps`
+`12-factor-apps` · `load-branch-changes` · `reset-permissions` · `review-golang` · `update-golang-deps` · `update-node-deps`
 
 ## Commands
 
-`/ai-kit:load-branch-changes` · `/ai-kit:reset-permissions` · `/ai-kit:review-golang` · `/ai-kit:update-golang-deps` · `/ai-kit:update-node-deps`
+`/ai-kit:12-factor-apps` · `/ai-kit:load-branch-changes` · `/ai-kit:reset-permissions` · `/ai-kit:review-golang` · `/ai-kit:update-golang-deps` · `/ai-kit:update-node-deps`
+
+## Credits
+
+The **`12-factor-apps`** skill is a port of the [`12-factor-apps`](https://clawhub.ai/anderskev/12-factor-apps) skill by **anderskev** (clawhub.ai), built on the [Twelve-Factor App](https://12factor.net) methodology by Adam Wiggins. See [`skills/12-factor-apps/ATTRIBUTION.md`](skills/12-factor-apps/ATTRIBUTION.md) for details.
 
 ## License
 
