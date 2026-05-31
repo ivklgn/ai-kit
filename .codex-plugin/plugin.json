@@ -31,7 +31,14 @@
   "interface": {
     "displayName": "AI Kit",
     "shortDescription": "Specialized subagents and skills for React, Go, TypeScript, PostgreSQL, CSS, Playwright, security, LLM architecture, and more",
+    "longDescription": "AI Kit bundles specialized subagents and skills for everyday engineering work: language experts (React, TypeScript, Go, PostgreSQL, CSS), security auditing, deployment, LLM architecture, MCP development, and dependency maintenance. Skills automate branch review and dependency updates; agents bring deep, focused expertise on demand.",
     "developerName": "ivklgn",
-    "category": "Productivity"
+    "category": "Productivity",
+    "capabilities": ["Skills", "Agents", "MCP"],
+    "defaultPrompt": [
+      "Review my current branch changes.",
+      "Use AI Kit to update this project's dependencies.",
+      "Help me pick the right specialist agent for this task."
+    ]
   }
 }
