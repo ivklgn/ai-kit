@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Kit"
+  short_description: "Specialized subagents and skills for React, Go, TypeScript, PostgreSQL, CSS, Playwright, security, LLM architecture, and more"
+  default_prompt: "Help me with a specialized engineering task — React, Go, TypeScript, PostgreSQL, CSS, security, deployment, or LLM architecture."

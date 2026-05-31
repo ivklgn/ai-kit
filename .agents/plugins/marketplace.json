@@ -8,7 +8,7 @@
       "name": "ai-kit",
       "source": {
         "source": "local",
-        "path": "./"
+        "path": "./plugins/ai-kit"
       },
       "policy": {
         "installation": "INSTALLED_BY_DEFAULT",
