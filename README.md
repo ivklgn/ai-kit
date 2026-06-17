@@ -31,11 +31,11 @@ Local dev: `claude --plugin-dir .`
 
 ## Skills
 
-`12-factor-apps` · `audit-website` · `load-branch-changes` · `reset-permissions` · `review-golang` · `seo-audit` · `update-golang-deps` · `update-node-deps`
+`12-factor-apps` · `audit-website` · `load-branch-changes` · `reset-permissions` · `review-golang` · `seo-audit` · `test-health-check` · `update-golang-deps` · `update-node-deps`
 
 ## Commands
 
-`/ai-kit:12-factor-apps` · `/ai-kit:load-branch-changes` · `/ai-kit:reset-permissions` · `/ai-kit:review-golang` · `/ai-kit:update-golang-deps` · `/ai-kit:update-node-deps`
+`/ai-kit:12-factor-apps` · `/ai-kit:load-branch-changes` · `/ai-kit:reset-permissions` · `/ai-kit:review-golang` · `/ai-kit:test-health-check` · `/ai-kit:update-golang-deps` · `/ai-kit:update-node-deps`
 
 ## Credits
 
