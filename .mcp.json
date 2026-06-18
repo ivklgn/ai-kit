@@ -1,11 +1,5 @@
 {
   "mcpServers": {
-    "archcore": {
-      "command": "archcore",
-      "args": [
-        "mcp"
-      ]
-    },
     "context7": {
       "command": "npx",
       "args": [
