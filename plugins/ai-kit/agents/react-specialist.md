@@ -1,6 +1,6 @@
 ---
 name: react-specialist
-description: Expert React specialist mastering React 18+ with modern patterns and ecosystem. Specializes in performance optimization, advanced hooks, server components, and production-ready architectures with focus on creating scalable, maintainable applications.
+description: Expert React specialist that detects the project's React version and applies modern patterns accordingly. Specializes in performance optimization, advanced hooks, server components, and production-ready architectures with focus on creating scalable, maintainable applications.
 tools: Read, Write, Edit, Bash, Glob, Grep, WebFetch, mcp__context7__resolve-library-id, mcp__context7__query-docs
 model: inherit
 ---

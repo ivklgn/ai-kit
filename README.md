@@ -31,11 +31,11 @@ Local dev: `claude --plugin-dir .`
 
 ## Skills
 
-`12-factor-apps` · `audit-website` · `can-i-use` · `code-reviewer` · `humanizer` · `humanizer-ru` · `jsdoc` · `load-branch-changes` · `module-compatibility-audit` · `nextjs-developer` · `reset-permissions` · `review-golang` · `seo-audit` · `test-health-check` · `update-golang-deps` · `update-node-deps`
+`12-factor-apps` · `audit-website` · `can-i-use` · `code-reviewer` · `humanizer` · `humanizer-ru` · `jsdoc` · `load-branch-changes` · `module-compatibility-audit` · `nextjs-developer` · `reset-permissions` · `review-golang` · `seo-audit` · `simplify-code-comments` · `test-health-check` · `update-golang-deps` · `update-node-deps`
 
 ## Commands
 
-`/ai-kit:12-factor-apps` · `/ai-kit:can-i-use` · `/ai-kit:humanizer` · `/ai-kit:humanizer-ru` · `/ai-kit:jsdoc` · `/ai-kit:load-branch-changes` · `/ai-kit:module-compatibility-audit` · `/ai-kit:reset-permissions` · `/ai-kit:review-golang` · `/ai-kit:test-health-check` · `/ai-kit:update-golang-deps` · `/ai-kit:update-node-deps`
+`/ai-kit:12-factor-apps` · `/ai-kit:can-i-use` · `/ai-kit:humanizer` · `/ai-kit:humanizer-ru` · `/ai-kit:jsdoc` · `/ai-kit:load-branch-changes` · `/ai-kit:module-compatibility-audit` · `/ai-kit:reset-permissions` · `/ai-kit:review-golang` · `/ai-kit:simplify-code-comments` · `/ai-kit:test-health-check` · `/ai-kit:update-golang-deps` · `/ai-kit:update-node-deps`
 
 ## Credits
 

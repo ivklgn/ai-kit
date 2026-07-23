@@ -1,12 +1,12 @@
 ---
 name: review-and-release
-description: Sync README with current agents/skills, validate plugin conventions, bump version, and commit. Use when the user says "/review-and-release" or wants to prepare a release after adding, removing, or changing agents or skills.
+description: Sync README with current agents/skills, validate plugin conventions, sync the Codex plugin directory (plugins/ai-kit), bump version, and commit. Use when the user says "/review-and-release" or wants to prepare a release after adding, removing, or changing agents or skills.
 model: sonnet
 ---
 
 # Review and Release
 
-Synchronize README.md with the current set of agents and skills, validate files follow plugin conventions, bump the patch version in both plugin manifests, and create a release commit.
+Synchronize README.md with the current set of agents and skills, validate files follow plugin conventions, sync the Codex plugin directory, bump the patch version in both plugin manifests, and create a release commit.
 
 ## Step 1: Inventory Agents and Skills
 
@@ -30,17 +30,16 @@ Store both inventories for use in subsequent steps.
 
 ## Step 2: Diff Against README
 
-Read `README.md` and parse:
+Read `README.md` and parse its three inline lists (backtick-separated names, alphabetical):
 
-1. **Description line** — extract agent and skill counts from pattern: `N specialized subagents and M skills`.
-2. **Agents table** — extract all rows from the `## Agents` table
-3. **Skills table** — extract all rows from the `## Skills` table
+1. **`## Agents`** — `` `name` · `name` · … ``
+2. **`## Skills`** — same format
+3. **`## Commands`** — `` `/ai-kit:name` · … `` (one entry per `commands/*.md` file)
 
 Compare the filesystem inventory against README and classify:
 
-- **Added** — in filesystem but not in README table
-- **Removed** — in README table but not in filesystem
-- **Description changed** — present in both but description no longer matches
+- **Added** — in filesystem but not in the README list
+- **Removed** — in the README list but not in filesystem
 - **Unchanged** — matches
 
 If zero differences across agents and skills, report "README is already in sync" and skip to Step 3.
@@ -98,19 +97,7 @@ If any issues found, present them as a numbered list with file paths and **stop*
 
 ## Step 4: Apply README Updates
 
-If Step 2 found differences, update `README.md` using the Edit tool:
-
-1. **Description line** — update counts: `{agent_count} specialized subagents and {skill_count} skills`.
-
-2. **Agents table** — rebuild the full table sorted alphabetically by name:
-   ```
-   | [agent-name](agents/agent-name.md) | Short description |
-   ```
-
-3. **Skills table** — rebuild the full table sorted alphabetically by name:
-   ```
-   | [skill-name](skills/skill-name/SKILL.md) | Short description |
-   ```
+If Step 2 found differences, update `README.md` using the Edit tool: rebuild each affected inline list (`## Agents`, `## Skills`, `## Commands`) sorted alphabetically, keeping the existing `` `name` · `name` `` format.
 
 ## Step 5: Bump Version
 
@@ -121,7 +108,25 @@ Increment the patch version (e.g., `2.0.4` → `2.0.5`) in **both** manifests so
 
 Use the Edit tool on each file.
 
-## Step 6: Present Summary
+## Step 6: Sync Codex Plugin Directory
+
+The Codex marketplace manifest (`.agents/plugins/marketplace.json`) points at `plugins/ai-kit/`, not the repo root — Codex users get ONLY what is inside that directory. It must mirror the root on every release:
+
+```bash
+rsync -a --delete skills/ plugins/ai-kit/skills/
+rsync -a --delete agents/ plugins/ai-kit/agents/
+cp .codex-plugin/plugin.json plugins/ai-kit/.codex-plugin/plugin.json
+```
+
+Verify the sync:
+
+```bash
+diff -rq skills plugins/ai-kit/skills && diff -rq agents plugins/ai-kit/agents
+```
+
+Both diffs must be empty. Commands are intentionally not synced — the Codex plugin manifest declares only `skills` and `mcpServers`; `commands/` is Claude-only.
+
+## Step 7: Present Summary
 
 Before committing, show a clear summary:
 
@@ -133,10 +138,11 @@ Before committing, show a clear summary:
 **README changes:**
 - Added agents: ...
 - Removed agents: ...
-- Updated descriptions: ...
 - Added skills: ...
 - Removed skills: ...
-- Counts updated: N → M agents, P → Q skills
+- Added commands: ...
+
+**Codex sync:** plugins/ai-kit updated (N files changed) / already in sync.
 
 **Validation:** All agents and skills pass convention checks.
 
@@ -144,16 +150,17 @@ Before committing, show a clear summary:
 - README.md
 - .claude-plugin/plugin.json
 - .codex-plugin/plugin.json
+- plugins/ai-kit/** (if the sync changed anything)
 ```
 
 Only show sections with actual changes.
 
-## Step 7: Commit
+## Step 8: Commit
 
 Stage and commit only the modified files:
 
 ```bash
-git add README.md .claude-plugin/plugin.json .codex-plugin/plugin.json
+git add README.md .claude-plugin/plugin.json .codex-plugin/plugin.json plugins/ai-kit
 ```
 
 Commit with message format:
