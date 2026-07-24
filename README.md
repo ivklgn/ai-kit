@@ -31,7 +31,7 @@ Local dev: `claude --plugin-dir .`
 
 ## Skills
 
-`12-factor-apps` · `audit-website` · `can-i-use` · `code-reviewer` · `humanizer` · `humanizer-ru` · `jsdoc` · `load-branch-changes` · `module-compatibility-audit` · `nextjs-developer` · `reset-permissions` · `review-golang` · `seo-audit` · `simplify-code-comments` · `test-health-check` · `update-golang-deps` · `update-node-deps`
+`12-factor-apps` · `audit-website` · `can-i-use` · `code-reviewer` · `explain-branch-changes` · `humanizer` · `humanizer-ru` · `jsdoc` · `load-branch-changes` · `module-compatibility-audit` · `nextjs-developer` · `reset-permissions` · `review-golang` · `seo-audit` · `simplify-code-comments` · `test-health-check` · `update-golang-deps` · `update-node-deps`
 
 ## Commands
 
