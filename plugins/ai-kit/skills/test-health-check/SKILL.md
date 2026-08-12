@@ -1,6 +1,6 @@
 ---
 name: test-health-check
-description: Prove that a unit, integration, or end-to-end test genuinely guards its stated behavior by running a few targeted fault probes (reachability, sensitivity, oracle validity, reliability) around the code under test — instead of trusting coverage. Use during active test development or test review: after writing or changing a test, when verifying a test actually catches real bugs, when a test "passes but might not test anything", when a suite feels untrustworthy, or to health-check the tests affected by the current branch. Supports an isolated git-worktree mode scoped to affected cases so production code is never touched.
+description: Prove that a unit, integration, or end-to-end test genuinely guards its stated behavior by running a few targeted fault probes (reachability, sensitivity, oracle validity, reliability) around the code under test — instead of trusting coverage. Use during active test development or test review — after writing or changing a test, when verifying a test actually catches real bugs, when a test "passes but might not test anything", when a suite feels untrustworthy, or to health-check the tests affected by the current branch. Supports an isolated git-worktree mode scoped to affected cases so production code is never touched.
 model: sonnet
 ---
 

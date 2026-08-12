@@ -31,11 +31,11 @@ Local dev: `claude --plugin-dir .`
 
 ## Skills
 
-`12-factor-apps` · `audit-website` · `can-i-use` · `code-reviewer` · `explain-branch-changes` · `humanizer` · `humanizer-ru` · `jsdoc` · `load-branch-changes` · `module-compatibility-audit` · `nextjs-developer` · `reset-permissions` · `review-golang` · `seo-audit` · `simplify-code-comments` · `test-health-check` · `update-golang-deps` · `update-node-deps`
+`12-factor-apps` · `audit-website` · `can-i-use` · `code-reviewer` · `compatibility-audit` · `explain-branch-changes` · `humanizer` · `humanizer-ru` · `jsdoc` · `load-branch-changes` · `nextjs-developer` · `reset-permissions` · `review-golang` · `seo-audit` · `simplify-code-comments` · `test-health-check` · `update-golang-deps` · `update-node-deps`
 
 ## Commands
 
-`/ai-kit:12-factor-apps` · `/ai-kit:can-i-use` · `/ai-kit:humanizer` · `/ai-kit:humanizer-ru` · `/ai-kit:jsdoc` · `/ai-kit:load-branch-changes` · `/ai-kit:module-compatibility-audit` · `/ai-kit:reset-permissions` · `/ai-kit:review-golang` · `/ai-kit:simplify-code-comments` · `/ai-kit:test-health-check` · `/ai-kit:update-golang-deps` · `/ai-kit:update-node-deps`
+`/ai-kit:12-factor-apps` · `/ai-kit:can-i-use` · `/ai-kit:compatibility-audit` · `/ai-kit:humanizer` · `/ai-kit:humanizer-ru` · `/ai-kit:jsdoc` · `/ai-kit:load-branch-changes` · `/ai-kit:reset-permissions` · `/ai-kit:review-golang` · `/ai-kit:simplify-code-comments` · `/ai-kit:test-health-check` · `/ai-kit:update-golang-deps` · `/ai-kit:update-node-deps`
 
 ## Credits
 
@@ -48,7 +48,7 @@ Several agents and skills are ports of, or are adapted from, third-party MIT-lic
 - **`humanizer`** — port of [blader/humanizer](https://github.com/blader/humanizer) by **Siqi Chen** (MIT), based on Wikipedia's "Signs of AI writing" guide; **`humanizer-ru`** — port of [ilyautov/humanizer-ru](https://github.com/ilyautov/humanizer-ru) by **Ilya Utov** (MIT)
 - **`python-pro`**, **`ios-developer`**, **`frontend-developer`** agents — adapted from [wshobson/agents](https://github.com/wshobson/agents) by **Seth Hobson** (MIT)
 - **`android-developer`**, **`typescript-pro`**, **`golang-pro`**, **`mcp-developer`**, **`cli-developer`**, **`llm-architect`**, **`architect-reviewer`**, **`platform-engineer`**, **`prompt-engineer`** agents — adapted from [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) (MIT)
-- **`unit-test-master`**, **`bdd-specialist`**, **`module-compatibility-audit`** — original text drawing on patterns from [testland/qa](https://github.com/testland/qa) (MIT) and wshobson/agents
+- **`unit-test-master`**, **`bdd-specialist`**, **`compatibility-audit`** — original text drawing on patterns from [testland/qa](https://github.com/testland/qa) (MIT) and wshobson/agents
 
 All adaptations are substantially rewritten for ai-kit's detect-the-project-first conventions.
 

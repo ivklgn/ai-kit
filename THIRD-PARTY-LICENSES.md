@@ -21,7 +21,7 @@ each ported skill directory.
 | `skills/humanizer` | [blader/humanizer](https://github.com/blader/humanizer) | MIT | Port |
 | `skills/humanizer-ru` | [ilyautov/humanizer-ru](https://github.com/ilyautov/humanizer-ru) | MIT | Port, including metric scripts |
 | `skills/12-factor-apps` | [anderskev/12-factor-apps](https://clawhub.ai/anderskev/12-factor-apps) (clawhub.ai) | MIT-0 | Port (see `skills/12-factor-apps/ATTRIBUTION.md`) |
-| `skills/module-compatibility-audit` | [testland/qa](https://github.com/testland/qa) | MIT | Original text; workflow concept extends its contract-compatibility-gate skill |
+| `skills/compatibility-audit` | [testland/qa](https://github.com/testland/qa) | MIT | Original text; workflow concept extends its contract-compatibility-gate skill |
 | `agents/python-pro`, `agents/ios-developer`, `agents/frontend-developer` | [wshobson/agents](https://github.com/wshobson/agents) | MIT | Adapted / rewritten |
 | `agents/android-developer` | [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) | MIT | Adapted from `kotlin-specialist` |
 | `agents/unit-test-master`, `agents/bdd-specialist` | [testland/qa](https://github.com/testland/qa), [wshobson/agents](https://github.com/wshobson/agents) | MIT | Original text drawing on their detection tables and anti-pattern catalogs |
