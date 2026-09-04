@@ -16,6 +16,16 @@
       "source": "skills/compatibility-audit-model.adr.md",
       "target": "conventions/project-stack.rule.md",
       "type": "related"
+    },
+    {
+      "source": "experience/adding-a-skill.task-type.md",
+      "target": "conventions/project-stack.rule.md",
+      "type": "depends_on"
+    },
+    {
+      "source": "experience/adding-a-skill.task-type.md",
+      "target": "importing-external-components.rule.md",
+      "type": "depends_on"
     }
   ]
 }

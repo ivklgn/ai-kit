@@ -3,3 +3,4 @@
 .claude/skills/*
 !.claude/skills/sync-repo-updates/
 !.claude/skills/review-and-release/
+!.claude/skills/new-skill/
