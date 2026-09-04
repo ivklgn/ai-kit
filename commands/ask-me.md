@@ -2,7 +2,7 @@
 description: List everything the agent needs from you to continue — decisions, answers, access, data, actions — with why it is blocked, what it unblocks, and how to reply.
 ---
 
-# /ai-kit:askme
+# /ai-kit:ask-me
 
 ## Arguments
 
@@ -12,4 +12,4 @@ An empty value means the full list. `blocking` keeps only items that gate a plan
 
 ## Instructions
 
-Use the skill at `skills/askme/SKILL.md`.
+Use the skill at `skills/ask-me/SKILL.md`.

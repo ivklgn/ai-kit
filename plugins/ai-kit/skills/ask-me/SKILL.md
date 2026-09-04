@@ -1,6 +1,6 @@
 ---
-name: askme
-description: Turn the current plan into a numbered list of what only the human can supply — decisions, facts only they know, credentials or access, data from systems the agent can't reach, and real-world or interactive actions — each with why the agent is blocked, which step it unblocks, the default if unanswered, and the exact reply shape. Works only from what is already in context; calls no tools and never explores the codebase. Use when the user asks what you need from me, what's blocked on me, give me my part, what are your questions, or says ask me what you need, or invokes askme; and proactively once the plan reaches a step that depends on a person.
+name: ask-me
+description: Turn the current plan into a numbered list of what only the human can supply — decisions, facts only they know, credentials or access, data from systems the agent can't reach, and real-world or interactive actions — each with why the agent is blocked, which step it unblocks, the default if unanswered, and the exact reply shape. Works only from what is already in context; calls no tools and never explores the codebase. Use when the user asks what you need from me, what's blocked on me, give me my part, what are your questions, or says ask me what you need, or invokes ask-me; and proactively once the plan reaches a step that depends on a person.
 model: sonnet
 ---
 
